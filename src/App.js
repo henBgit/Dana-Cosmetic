@@ -532,7 +532,7 @@ clone.querySelectorAll("input, textarea").forEach(input => {
       console.log('client_phone', formData.phone);
 
       // שליחה לשרת ה-PHP שלנו
-      const apiUrl = process.env.REACT_APP_API_BASE_URL || 'http://localhost:8000/send-email.php';
+      const apiUrl = process.env.REACT_APP_API_BASE_URL;
       console.log('apiUrl',apiUrl);
        
       const response = await fetch(apiUrl, {
